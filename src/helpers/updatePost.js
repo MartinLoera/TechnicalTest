@@ -13,7 +13,6 @@ export const updatePost = async (postToUpdate) => {
         },
     });
 
-    const data = await response.json()
-    console.log(data);
-    return data;
+    const status = response.status;
+    return status;
 };

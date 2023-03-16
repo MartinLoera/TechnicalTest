@@ -3,6 +3,5 @@ export const deletePost = async(postToDeleteId) => {
         method: "DELETE", 
     });
     const statusCode = await response.status;
-    console.log(statusCode);
     return statusCode;
 }

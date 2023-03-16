@@ -11,6 +11,6 @@ export const addPost = async(postToAdd) => {
             'Content-type': 'application/json; charset=UTF-8',
         }
     });
-    const statusCode = response.statusCode;
+    const statusCode = response.status;
     return statusCode;
 }

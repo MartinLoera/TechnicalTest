@@ -3,6 +3,5 @@ export const getPostsById = async (postId) => {
         `https://jsonplaceholder.typicode.com/posts/${postId}`
     );
     const data = await response.json();
-    console.log(data);
-    return data;
+    return [data];
 };
